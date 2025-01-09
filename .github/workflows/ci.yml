@@ -3,7 +3,7 @@ name: Enforce Branching Rules
 on:
   pull_request:
     branches:
-      - 'ui/orion/release/*'  # Only run on PRs targeting release branches
+      - 'ui/release/*'  # Only run on PRs targeting release branches
 
 jobs:
   check_pr_description:
