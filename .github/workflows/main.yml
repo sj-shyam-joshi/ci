@@ -3,7 +3,7 @@ name: Feature Branch PR Validation
 on:
   pull_request:
     branches:
-      - 'ui/feature/*' # Apply to branches matching the 'feature/' pattern
+      - 'ui/release/*' # Apply to branches matching the 'feature/' pattern
     types:
       - opened
       - reopened
