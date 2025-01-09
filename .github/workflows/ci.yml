@@ -28,11 +28,11 @@ jobs:
       - name: Checkout PR
         uses: actions/checkout@v2
 
-      - name: Check if source branch starts with ui/orion/feature/
+      - name: Check if source branch starts with ui/feature/
         run: |
           SOURCE_BRANCH=${{ github.head_ref }}
           if [[ ! "$SOURCE_BRANCH" =~ ^ui/orion/feature/ ]]; then
-            echo "Error: Source branch must start with 'ui/orion/feature/'"
+            echo "Error: Source branch must start with 'ui/feature/'"
             exit 1
           fi
 
